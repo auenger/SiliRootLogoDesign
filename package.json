@@ -6,7 +6,8 @@
   "packageManager": "pnpm@10.29.2",
   "scripts": {
     "dev": "serve public -l 4321 -c serve.json",
-    "build": "node scripts/build-logo-animation.mjs",
+    "build": "node scripts/build-logo-animation.mjs && node scripts/build-readme-assets.mjs",
+    "build:readme-assets": "node scripts/build-readme-assets.mjs",
     "test": "node public/monogram-mvp/tests/geometry.mjs"
   },
   "dependencies": {

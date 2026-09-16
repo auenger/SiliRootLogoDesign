@@ -1,12 +1,21 @@
 # SiliRoot Logo Design
 
 <p align="center">
-  <img src="assets/logo-horizontal.svg" alt="硅基源流 SiliRoot Logo" width="720">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-readme-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/logo-readme-light.svg">
+    <img src="assets/logo-readme-light.svg" alt="硅基源流 SiliRoot Logo" width="720">
+  </picture>
 </p>
 
 SiliRoot（硅基源流）的 Logo 设计衍生小工具前端项目。项目把品牌标志的几何构造过程做成可交互页面，并进一步提供双字母共形实验工具，用标准圆、圆弧、直线和真实负空间生成新的 Monogram 方案。
 
 > “直线属于人类，曲线属于上帝。” —— 安东尼·高迪
+
+## 在线预览
+
+- [Logo Design Lab](https://siliroot.com/logo-lab) — 查看 SR 标志从几何构造到渐进填黑的完整过程
+- [双字母设计工具](https://siliroot.com/monogram-mvp/) — 输入两个字母，生成并导出共形 Monogram 方案
 
 ## SR 几何构造
 
@@ -84,6 +93,7 @@ src/
   lab/LogoAnimation.tsx         Remotion 动画源码
   lib/logo-geometry.js          SR 共享几何源码
 scripts/build-logo-animation.mjs
+scripts/build-readme-assets.mjs
 ```
 
 ## 品牌信息
